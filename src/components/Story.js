@@ -30,8 +30,9 @@ const Story = ({ storyId }) => {
 				</span>
 				<span data-testid="story-time">
 					<MetaDataElement>Posted</MetaDataElement>{' '}
-                    {convertTime(story.time)}{' '}
-					| <a href={commentsBaseUrl}>Comments</a>
+                    {convertTime(story.time)} ago.{' '}
+					| <a href={commentsBaseUrl}>Comments</a>{' '}
+					| <a href="https://www.ebay.com">Top Comments</a>
 				</span>
 			</MetaData>
 			

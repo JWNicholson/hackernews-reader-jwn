@@ -8,9 +8,6 @@ export const StoriesContainer = () => {
     // const { count } = infiniteScroll()
     const [storyIds, setStoryIds] = useState([]);
 
-   
-   
-
     useEffect(() => {
         getStoryIds().then(data => setStoryIds(data));
     },[]);
@@ -19,7 +16,7 @@ export const StoriesContainer = () => {
         <>
         <GlobalStyle />
         <StoriesWrapper data-testid="stories-wrapper">
-        <h1>Hacker News Reader</h1>
+        
             {storyIds.map(storyId =>
                  <Story
                     key={storyId}
@@ -27,6 +24,6 @@ export const StoriesContainer = () => {
                  />)}
         </StoriesWrapper>
         </>
-    )
+    );
     
 }
