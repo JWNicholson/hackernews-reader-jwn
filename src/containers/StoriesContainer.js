@@ -12,7 +12,10 @@ export const StoriesContainer = () => {
         getStoryIds().then(data => setStoryIds(data));
     },[]);
 
+    
+   
     return(
+        
         <>
         <GlobalStyle />
         <StoriesWrapper data-testid="stories-wrapper">

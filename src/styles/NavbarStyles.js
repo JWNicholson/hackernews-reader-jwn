@@ -14,7 +14,9 @@ export const NavBar = styled.div`
         margin:10px;
     }
 
-    .navbar{
-        display:flex;
+    ul.navbar{
+        display:flex; 
+        list-style-type:none;
     }
+
 `;

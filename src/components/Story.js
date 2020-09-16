@@ -32,8 +32,11 @@ const Story = ({ storyId }) => {
 					<MetaDataElement>Posted</MetaDataElement>{' '}
                     {convertTime(story.time)} ago.{' '}
 					| <a href={commentsBaseUrl}>Comments</a>{' '}
-					| <a href="https://www.ebay.com">Top Comments</a>
+					| <button onClick={() => alert("boo")}><a href="/topcomments">Top Comments</a></button>
 				</span>
+				<div>
+					<p>{JSON.stringify(story.kids)}</p>
+				</div>
 			</MetaData>
 			
 		</StoryWrapper>

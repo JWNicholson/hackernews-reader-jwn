@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useState, useEffect} from 'react';
 import Comments from '../components/Comments';
+import { CommentsWrapper } from '../styles/CommentsWrapperStyles';
 
 
-const CommentsContainer = () => {
+export const CommentsContainer = () => {
+    // const [storyComments, setStoryComments] = useState([]);
+
+    
     return (
-        <div>
-           <Comments />
-        </div>
+       <>
+        
+        <CommentsWrapper >
+            <Comments
+            
+            />
+        </CommentsWrapper>
+       </>
     )
 }
 
-export default CommentsContainer;
+
